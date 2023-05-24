@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Аптека - Пошук ліків</title>
+</head>
+<body>
+    <h1>Аптека - Пошук ліків</h1>
+    {% if medicine %}
+        <p>Знайдено {{ medicine.name }} за {{ medicine.price }} грн.</p>
+    {% else %}
+        <p>Ліки не знайдено.</p>
+    {% endif %}
+    <a href="/">Повернутися</a>
+</body>
+</html>
